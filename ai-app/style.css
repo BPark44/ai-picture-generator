@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap");
+body {
+  /* ff 3.6+ */
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(255, 255, 0, 1) 0%,
+    rgba(0, 188, 212, 1) 50%,
+    rgba(238, 130, 238, 1) 100%
+  );
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(255, 255, 0, 1) 0%,
+    rgba(0, 188, 212, 1) 50%,
+    rgba(238, 130, 238, 1) 100%
+  );
+
+  /* opera 11.10+ */
+  background: -o-linear-gradient(
+    90deg,
+    rgba(255, 255, 0, 1) 0%,
+    rgba(0, 188, 212, 1) 50%,
+    rgba(238, 130, 238, 1) 100%
+  );
+
+  /* ie 6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ee82ee', endColorstr='#FFFF00', GradientType=0 );
+
+  /* ie 10+ */
+  background: -ms-linear-gradient(
+    90deg,
+    rgba(255, 255, 0, 1) 0%,
+    rgba(0, 188, 212, 1) 50%,
+    rgba(238, 130, 238, 1) 100%
+  );
+
+  /* global 94%+ browsers support */
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 0, 1) 0%,
+    rgba(0, 188, 212, 1) 50%,
+    rgba(238, 130, 238, 1) 100%
+  );
+  color: white;
+  font-family: "Poppins", sans-serif;
+  margin-top: 50px;
+}
+
+main {
+  display: grid;
+  place-items: center;
+}
+
+h1 {
+  /* font-family: "Rubik Microbe", cursive; */
+  font-weight: 400;
+  font-size: 5rem;
+}
+
+#result {
+  aspect-ratio: 1/1;
+  max-width: 512px;
+  width: 100%;
+  background: #3a3a43;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  overflow: hidden;
+
+  box-shadow: 0 0 40px #ffffff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 512px;
+  margin-top: 2rem;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  margin: 15px 0;
+  font-size: 1.5rem;
+  border-radius: 15px;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+
+button {
+  width: 100%;
+  height: 60px;
+  background-color: #1b1b1e;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+button:hover {
+  background-color: #2b2b2e;
+}
+
+.hidden {
+  display: none;
+}
+
+.spinner {
+  animation: spin 1s linear infinite;
+  display: inline-block;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

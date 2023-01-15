@@ -11,7 +11,7 @@ Tech used;
 - RapidAPI for testing
 
 Home
-![](screenshots/home.jpg)
+![](./screenshots/home.jpg)
 
 Result
-![](screenshots/example.jpg)
+![](./screenshots/example.jpg)
